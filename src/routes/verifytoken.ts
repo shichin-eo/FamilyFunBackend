@@ -18,6 +18,6 @@ export const verify = (req: Request, res: Response, next: NextFunction) => {
     //(req as any).user = verified;    //!!
     next();
   } catch (err) {
-    res.status(400).send("Invalid Token"); //Посмотреть ошибки 400 //?
+    res.status(400).send("Invalid Token"); 
   }
 };
